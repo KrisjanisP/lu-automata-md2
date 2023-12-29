@@ -84,6 +84,8 @@ Stāvokļu kopa $Q={s_0, s_1, s_2, s_3, s_4, s_5, s_6, s_7}$. Ieejas alfabēts $
 )]
 )
 
+#pagebreak()
+
 == 2. uzdevums (b)
 
 Pumpēšanas lemma: ja $A$ ir regulāra valoda, tad eksistē vesels skaitlis $p$ (pumpēšanas garums),
@@ -137,3 +139,43 @@ Valodas vārdi garumā $<= 4$: "$epsilon$",
 
 Rezultāts iegūts ar šo kodo:
 #text(link("https://github.com/KrisjanisP/lu-automata-md2/blob/main/codes/3.py"),fill:blue)
+
+== 3. uzdevums (b)
+
+== 4. uzdevums
+
+Jāuzbūvē varbūtiskais akceptors, kurš akceptē tādus un tikai tādus vārdus, kuros $a$ burtu skaits ir 3, $b$ burtu skaits ir 14.
+
+Risinājums:
+
+$Q = {s_0, s_1, s_2, s_3, s_4, s_5, s_6, s_7, s_8, s_9}$  - stāvokļu kopa.
+$X = {a, b}$   - ieejas alfabēts.
+$q_0 = s_0$  - sākumstāvoklis.
+$Q_A = {s_4, s_5, s_9}$  - akceptējošo stāvokļu kopa.
+
+$λ = 0.5+0.31479=0.81479$   - akceptēšanas slieksnis.
+
+#block(breakable: false,[
+Diagramma:
+
+#align(center,image("./automata_md2_kp22084_4.drawio.png", height: 40%))
+])
+
+Apskatot $s_5$ un $s_4$ summu pie dažādiem b skaitiem, pīķis tiek sasniegts pie 14.
+
+#align(center,image("./automata_md2_kp22084_4_plot.png", height: 40%))
+
+Vērtība ($s_5+s_4$) pie $b=1$ ir $0.25$, pie $b=13$ ir $0.31448$, pie $b=14$ ir $0.31479$, pie $b=15$ ir $0.31472$.
+
+#block(breakable: false,
+[Pārejas funkcijas tabula:
+
+#table(
+  columns: (auto, auto, auto, auto),
+  inset: 5pt,
+  align: center,
+  stroke: gray,
+  [Stāv. $q$],  [Ieeja $x$],  [Mērķis], [Varbūtība],
+
+)]
+)
