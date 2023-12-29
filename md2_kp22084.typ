@@ -27,3 +27,7 @@ align(center,image("./automata_md2_kp22084.drawio.png", height: auto))
 )
 
 Valodas vārdi ar garumu $<= 4$: "$epsilon$" "00" "000" "0000" "0010" "010" "0100" "0110".
+
+
+Rezultāts iegūts ar šo kodo:
+#text(link("https://github.com/KrisjanisP/lu-automata-md2/blob/main/codes/1.cpp"),fill:blue)
