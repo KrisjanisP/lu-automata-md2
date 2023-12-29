@@ -80,6 +80,9 @@ Stāvokļu kopa $Q={s_0, s_1, s_2, s_3, s_4, s_5, s_6, s_7}$. Ieejas alfabēts $
   [$s_6$],      [$1$],        [$a$],        [$s_6$],  [$a$],
   [$s_6$],      [$1$],        [$b$],        [$s_6$],  [$b$],
   [$s_3$],      [$epsilon$],        [$a$],        [$s_7$],  [$epsilon$],
+  [$s_4$],      [$epsilon$],        [$a$],        [$s_7$],  [$epsilon$],
+  [$s_5$],      [$epsilon$],        [$a$],        [$s_7$],  [$epsilon$],
+  [$s_6$],      [$epsilon$],        [$a$],        [$s_7$],  [$epsilon$],
 
 )]
 )
