@@ -142,6 +142,16 @@ Rezultāts iegūts ar šo kodo:
 
 == 3. uzdevums (b)
 
+#grid(columns:(1fr,1fr), gutter: 10pt,[
+Automātā iespējams veikt novērojumu, ka pēc $b$ atkārtotas ievades varbūtību sadalījums nemainās. Precīzāk pēc $b$ ievades vienmēr tiek iegūts viens un tas pats varbūtību sadalījums: $s_0$ iegūst varbūtību $1/7$, bet $s_1$ iegūst varbūtību $6/7$. No šī sadalījumu citu var iegūt tikai pēc nepāra skaita $a$ ievades. Balstoties uz šiem novērojumiem ir iespējams izveidot DFA. 
+
+Ja ir iespējams uzbūvēt DFA, tad tā ir regulāra valoda.
+
+],[
+#align(center,image("./automata_md2_kp22084_3b.drawio.png", height: 20%))
+
+])
+
 == 4. uzdevums
 
 Jāuzbūvē varbūtiskais akceptors, kurš akceptē tādus un tikai tādus vārdus, kuros $a$ burtu skaits ir 3, $b$ burtu skaits ir 14.
