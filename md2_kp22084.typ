@@ -97,3 +97,43 @@ Apskatīsim $s=$"$00(0)^(p+1) 11 0(10)^(p)$", kur $s in A$. Vardā $s$ apakšvir
 Pēc nosacījuma $|x y| <= p$ skaidrs, ka $y$ var saturēt tikai nulles.
 
 Kad $i=0$ jeb $s=x z$, $x z$ nevar saturēt vairāk nekā $p+2$ nulles prefiksā, jo $|y|>0$, līdz ar to iegūta pretruna, jo apakšvirknes "$000$" ir ne vairāk kā $p$ (tik ir arī apakšvirkņu "$010$").
+
+== 3. uzdevums (a)
+
+#grid(columns:(1fr,1fr), gutter: 10pt,
+table(
+  columns: (auto, auto, auto, auto),
+  inset: 10pt,
+  align: center,
+  stroke: gray,
+  [Stāv. $q$], [Ieeja $x$], [Mērķis],[Varbūtība],
+  [$s_0$], [$a$], [$s_1$], [$1$],
+  [$s_0$], [$b$], [$s_0$], [$1/7$],
+  [$s_0$], [$b$], [$s_1$], [$6/7$],
+  [$s_1$], [$a$], [$s_0$], [$1$],
+  [$s_1$], [$b$], [$s_0$], [$1/7$],
+  [$s_1$], [$b$], [$s_1$], [$6/7$],
+),
+align(center,image("./automata_md2_kp22084_3.drawio.png", height: auto))
+)
+
+$Q = {s_0, s_1}$  - stāvokļu kopa.
+$X = {a, b}$   - ieejas alfabēts.
+$q_0 = s_0$  - sākumstāvoklis.
+$Q_A = {s_0}$  - akceptējošo stāvokļu kopa.
+$λ = 0.5$    - akceptēšanas slieksnis.
+
+Valodas vārdi ar garumu $<= 4$: "",
+"aa",
+"ba",
+"aba",
+"bba",
+"aaaa",
+"aaba",
+"abba",
+"baaa",
+"baba",
+"bbba".
+
+Rezultāts iegūts ar šo kodo:
+#text(link("https://github.com/KrisjanisP/lu-automata-md2/blob/main/codes/3.py"),fill:blue)
