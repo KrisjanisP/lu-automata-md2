@@ -123,7 +123,7 @@ $q_0 = s_0$  - sākumstāvoklis.
 $Q_A = {s_0}$  - akceptējošo stāvokļu kopa.
 $λ = 0.5$    - akceptēšanas slieksnis.
 
-Valodas vārdi ar garumu $<= 4$: "",
+Valodas vārdi garumā $<= 4$: "$epsilon$",
 "aa",
 "ba",
 "aba",
